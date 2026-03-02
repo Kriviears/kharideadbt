@@ -6,4 +6,4 @@ SELECT
 	AMOUNT as payment_amount,
 	CREATED as payment_created,
     _BATCHED_AT,
-FROM RAW.STRIPE.PAYMENT
+FROM {{ source('stripe', 'payment') }}
