@@ -1,0 +1,9 @@
+models:
+  - name: stg_stripe__payment.yml
+    description: Raw payment data
+    columns:
+      - name: payment_id
+        data_tests:
+          - unique
+          - not_null
+          
